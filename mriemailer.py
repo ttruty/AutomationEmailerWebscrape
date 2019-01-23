@@ -121,4 +121,4 @@ def Emailer(text, subject, recipient, auto=False):
 def create_email(path):
     with open(path, 'r') as myfile:      
         text = myfile.read()
-        Emailer(text, "Next Week's Orders", 'mail@chicagolimousine.com', False)
+        Emailer(text, "Next Week's Orders", 'email@validemailaddress.com', False)

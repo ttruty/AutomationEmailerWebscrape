@@ -1,10 +1,6 @@
 import datetime, time, mridetails, io, os, collections, re
 from tkinter import *
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import win32com.client as win32
-import threading
-
 
 def driver_open():
     global DRIVER
@@ -60,22 +56,6 @@ def login_gui():
     root.geometry("350x300")
     LoginFrame(root)
     root.mainloop()
-
-#login_gui()
-############################################
-
-############## BACKEND DRIVERS #######################################
-#
-# count = 30
-# class ThreadedTask(threading.Thread):
-#     def __init__(self, progress):
-#         threading.Thread.__init__(self)
-#         self.progress = progress
-#     def run(self):
-#         for i in range(count):
-#             self.progress.step(1)  # Update progress bar
-#             time.sleep(1)  # Simulate long running process
-
 
 class mri_driver():
     def __init__(self):
